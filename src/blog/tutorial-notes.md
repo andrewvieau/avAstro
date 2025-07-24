@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+ 
 title: 'My Astro Tutorial notes'
 pubDate: 2025-07-24
 description: 'Summarizing all of my notes.'
@@ -20,7 +20,7 @@ Thank you to [Late Developer](https://www.youtube.com/@latedeveloper7836) for re
 
 I have Github Copilot installed on VS Code, and I found it interesting that it offered to auto-complete the "Try it yourself" exercise.  I've been ignoring most of the auto-completion prompts so far, which have generally been giving generic suggestions with clearly AI generated text.  This time it suggested the exact font weight & text case. This was something I was supposed to enter myself, building on knowledge from a previous exercise to prove that I understood the syntax.
 
-![Screenshot of Github Copilot suggestion](../../images/2-pages-4-github-copilot-predictive-text.png)
+![Screenshot of Github Copilot suggestion](/src/images/2-pages-4-github-copilot-predictive-text.png)
 
 I'm curious if there were hints in the way I was building earlier, if GC is familiar with the tutorial, or if it's just pulling from the likely thousands of other public repos with the exact same info.  
 
@@ -44,3 +44,6 @@ That didn't help, but I did notice that one post, learning-astro.md, had no tags
 
 getStaticPaths() seems important, so I'm going to pause to read <a href="https://docs.astro.build/en/reference/routing-reference/#getstaticpaths">the documentation</a>.
 
+## Optional: Make a content collection
+
+This exercise seems a touch out of date, as some of the code does not match.  It's easy enough to catch, you just need to copy more code than the page would indicate - usually the entire line instead of the highlighted change.

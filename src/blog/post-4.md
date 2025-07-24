@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+ 
 title: My Fourth Blog Post
 author: Astro Learner
 description: "This is not a part of the tutorial"
