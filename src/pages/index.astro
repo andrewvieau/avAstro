@@ -1,7 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+import Greeting from '../components/Greeting';
+const pageTitle = "AndrewVieau.com";
 ---
-<BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+<BaseLayout pageTitle={pageTitle}>  
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <h2>I just finished the Astro.js tutorial</h2>
+  <p>
+    I wanted to learn something new, so I decided to try out Astro.js. At the moment, other than this comment here and one additional blog post, this site is the finished product from the end of the tutorial. For my next step, I could make this site look a little nicer, but I'm leaning towards trying out another tutorial.  Top candidates are:
+  </p>
+  <ul>
+    <li>
+      <b>Nextjs</b> is popular, and while I've been working with it for a long time, I had a fairly unique crash course that missed out on a lot of the fundamentals.
+    </li>
+    <li>
+      <b>Vue</b> makes for some great puns with my last name, which is easily my favorite reason to learn it.
+    </li>
+    <li>
+      <b>.Net Core</b> (or is it just .Net now?) would be a logical next step, as I have a background with ASP.Net Webforms & MVC.
+    </li>
+  </ul>
+  <p>
+    If you have a suggestion, <a href="https://youtu.be/ub82Xb1C8os?si=Dr5EsvkbBgGmyeRP">contact me</a>.
+  </p>
 </BaseLayout>
