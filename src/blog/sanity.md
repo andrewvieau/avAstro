@@ -33,5 +33,7 @@ I noticed thta the prerequisites say: "Before taking on the guide, make sure tha
 
 So the question is: Do I give up on Sanity or Astro?
 
-I'd like to stay with Sanity, and I still want to use a framework that I have no experience with, so I'm going with Gatsby.  If this doesn't work, I'm back to Astro & leaning towards Contentful or Contentstack.
+I was learning towards sticking with Sanity. I still wanted to use a framework that I have no experience with, so I went with Gatsby.  But after reading the [Gatsby with Sanity Guide](https://www.gatsbyjs.com/guides/sanity/), I reconsidered.  The "Sanity is great for" section doesn't list anything I care about, and the "Sanity is not-so-great for" describes me perfectly.
+
+Plus I just spent all this time going through the Astro tutorial, and I'd like to keep building on my skills there.  So I'm going to give Contentful a try.
 
