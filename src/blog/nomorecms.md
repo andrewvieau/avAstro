@@ -31,3 +31,19 @@ I can always connect the CMS later, and doing a content migration might be more 
 
 Plus I'm not sure how much longer any of these companies are going to continue providing a free tier.  Their customers are entprise organizations that measure their budgets in tens and hundreds of thousands of dollars, and it may not be too long before the free tier's cost outweighs it's benefits.  Particularly with increasingly expensive embedded AI.
 
+I'm also partial to trying out another tutorial.  Top candidates are:
+  </p>
+  <ul>
+    <li>
+      <b>Nextjs</b> is popular, and while I've been working with it for a long time, I had a fairly unique crash course that missed out on a lot of the fundamentals.
+    </li>
+    <li>
+      <b>Vue</b> makes for some great puns with my last name, which is easily my favorite reason to learn it.
+    </li>
+    <li>
+      <b>.Net Core</b> (or is it just .Net now?) would be a logical next step, as I have a background with ASP.Net Webforms & MVC.
+    </li>
+    <li>
+      <b>React.</b> Nextjs is built on React, but I don't need all the bells & whistles, so making a simple react application might make more sense for a small site like this.
+    </li>
+  </ul>
