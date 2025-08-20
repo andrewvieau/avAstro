@@ -1,0 +1,29 @@
+---
+import BlogPost from './BlogPost.astro';
+type Post = {
+  url: string;
+  frontmatter: {
+    title: string;
+    pubDate: string;
+    tags?: string[];
+  };
+};
+
+const allPosts = Object.values(import.meta.glob('/src/blog/*.md', { eager: true })) as Post[];
+
+// Filter posts with 'featured' tag and sort by pubDate descending
+const featuredPosts = allPosts.filter((post) => {
+  const tags = post.frontmatter.tags || [];
+  return tags.includes('featured');
+}).sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+
+const mostRecentFeatured = featuredPosts[0];
+---
+<p>Featured:</p>
+{mostRecentFeatured ? (
+  <BlogPost url={mostRecentFeatured.url} title={mostRecentFeatured.frontmatter.title} />
+) : (
+  <p>No featured post found.</p>
+)}
+
+

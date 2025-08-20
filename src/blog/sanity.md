@@ -7,7 +7,7 @@ author: 'Astro Learner'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "sanity", "blogging", "learning in public"]
+tags: ["astro", "sanity", "blogging", "learning in public", "featured"]
 ---
 
 ## The tutorial

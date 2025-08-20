@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+import MostRecentFeaturedPost from "../components/MostRecentFeaturedPost.astro";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("blog");
@@ -9,7 +10,9 @@ const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  
+
+  <MostRecentFeaturedPost />
+
   <ul>
     {
       sortedPosts.map((post: any) => (
