@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --mainGreen: #009B77;
+}
+
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
@@ -20,6 +29,11 @@ h1 {
   font-size: 2.5rem;
 }
 
+a {
+  color: #FF6F61;
+  font-weight: bold;
+}
+
 /* nav styles */
 
 .hamburger {
@@ -32,19 +46,20 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: var(--mainGreen);
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #FF6F61;
   display: none;
   margin: 0;
 }
 
 .nav-links a {
+  color: black;
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -52,11 +67,12 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #FF6F61;
 }
 
 .expanded {
@@ -73,6 +89,13 @@ html.dark {
 .dark .nav-links a {
   color: #fff;
 }
+
+/* Andrew Custom */
+
+.main-green-text {
+  color: var(--mainGreen);
+}
+
 
 /* media queries */
 

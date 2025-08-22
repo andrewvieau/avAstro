@@ -1,5 +1,5 @@
 ---
-import BlogPost from './BlogPost.astro';
+import FeaturedPost from './FeaturedPost.astro';
 type Post = {
   url: string;
   frontmatter: {
@@ -9,7 +9,12 @@ type Post = {
   };
 };
 
-const allPosts = Object.values(import.meta.glob('/src/blog/*.md', { eager: true })) as Post[];
+
+const allPosts = Object.entries(import.meta.glob('/src/blog/*.md', { eager: true }))
+  .map(([path, post]) => ({
+    ...(post as Record<string, any>),
+    url: '/posts/' + path.split('/').pop().replace('.md', ''),
+  })) as Post[];
 
 // Filter posts with 'featured' tag and sort by pubDate descending
 const featuredPosts = allPosts.filter((post) => {
@@ -19,11 +24,13 @@ const featuredPosts = allPosts.filter((post) => {
 
 const mostRecentFeatured = featuredPosts[0];
 ---
-<p>Featured:</p>
+<p>Featured:
 {mostRecentFeatured ? (
-  <BlogPost url={mostRecentFeatured.url} title={mostRecentFeatured.frontmatter.title} />
+  <FeaturedPost url={mostRecentFeatured.url} title={mostRecentFeatured.frontmatter.title} />
 ) : (
   <p>No featured post found.</p>
 )}
+</p>
+
 
 

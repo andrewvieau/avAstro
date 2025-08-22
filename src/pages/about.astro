@@ -15,40 +15,49 @@ const happy = true;
 const finished = true;
 const goal = 3;
 
-const skillColor = "navy";
+const skillColor = "green";
 const fontWeight = "bold";
 const textCase = "uppercase";
+const workStatus = "booked until April 2025"
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 
 <style is:global define:vars={{skillColor, fontWeight, textCase}}>
   h1 {
-    color: purple;
+    color: var(--mainGreen);
     font-size: 4rem;
   }
   .skill {
-    color: var(--skillColor);
+    color: var(--mainGreen);
     font-weight: var(--fontWeight);
     text-transform: var(--textCase);
   }
-</style>  
+</style> 
 
-  <h3>
-    I'm an Enterprise Technology Specialist, Educator, and Web Developer.
+<main class="flex flex-col items-center justify-center">
+  <section class="rounded-lg shadow-lg p-8 max-w-2xl w-full mt-12">
+    <img src="/src/images/andrewvieau.png" alt="Me" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-green-400 shadow" />
+
+  <h3 class="text-3xl font-bold mb-4 main-green-text">
+    I'm an Enterprise Technology Generalist.
   </h3> 
   <p>
-    I've spent the last 10 years working with Sitecore, first with ASP.Net Webforms, then MVC, and most recently with Nextjs.
+    I have a diverse skillset spanning technical training, sales enablement, solutions architecture, and learning experience design.
+  </p>
+  <p>
+    Current status:   <span class="skill">{workStatus}</span>
   </p>
 
-    <p>This site is the product of <a href="https://docs.astro.build/en/tutorial/0-introduction/">Astro's introductory tutorial</a>. I'm done with it now, but I'm leaving up a few things because I want to study & modify the code later.
+<!--- 
+    <p>This site is the product of <a href="https://docs.astro.build/en/tutorial/0-introduction/">Astro's introductory tutorial</a>. <b>I'm done with it,</b> but I'm leaving up a few things because I want to study & modify the code later.
 
     <p>For example, the following content should look the same to you, but instead of just typing this information, I'm outputting data from a number of different variables.</p>
     <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+    <li>My name is <b>{identity.firstName}</b>.</li>
+    <li>I live in <b>{identity.country}</b> and I work as a <b>{identity.occupation}</b>.</li>
     {identity.hobbies.length >= 2 &&
-        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+        <li>Two of my hobbies are: <b>{identity.hobbies[0]}</b> and <b>{identity.hobbies[1]}</b></li>
     }
     </ul>
     <p>My skills are:</p>
@@ -60,9 +69,9 @@ const textCase = "uppercase";
 {happy && <p>I am happy to be learning Astro!</p>}
 
 {finished && <p>I finished this tutorial!</p>}
-
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-
+-->
+  </section>
+</main>
 
 </BaseLayout>
 

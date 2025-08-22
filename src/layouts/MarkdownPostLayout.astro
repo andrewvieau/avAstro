@@ -12,8 +12,10 @@ const options = { year: 'numeric', month: 'long', day: 'numeric' };
     {frontmatter.tags.map((tag: string) => (
       <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
     ))}
-  </div>    
+  </div> 
+  <div class="blogpost">
     <slot />
+  </div>   
 </BaseLayout>
 <style>
   a {
