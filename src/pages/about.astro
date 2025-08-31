@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import myHeadshot from "../images/andrewvieau.png"; // 
 
 const pageTitle = "About Me";
 const identity = {
@@ -37,8 +39,7 @@ const workStatus = "booked until April 2025"
 
 <main class="flex flex-col items-center justify-center">
   <section class="rounded-lg shadow-lg p-8 max-w-2xl w-full mt-12">
-    <img src="/src/images/andrewvieau.png" alt="Me" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-green-400 shadow" />
-
+    <Image src={myHeadshot} alt="A picture of me." class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-green-400 shadow" />
   <h3 class="text-3xl font-bold mb-4 main-green-text">
     I'm an Enterprise Technology Generalist.
   </h3> 
