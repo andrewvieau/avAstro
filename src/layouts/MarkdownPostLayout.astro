@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 ---
-<BaseLayout pageTitle={frontmatter.title} pageImage={frontmatter.image.url}>
+<BaseLayout pageTitle={frontmatter.title} pageImage={frontmatter.image.url} pageDescription={frontmatter.description}>
     <p>{frontmatter.pubDate.toLocaleDateString('en-US', options)}</p>
     <p><em>{frontmatter.description}</em></p>
     <p>Written by: {frontmatter.author}</p>
