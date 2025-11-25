@@ -1,17 +1,15 @@
 ---
- 
-title: 'Sitecore Workflows that Work'
-pubDate: 2025-11-05
-description: 'Whether you’re on SitecoreAI, XM, or XP, these tips and tricks can streamline your content creation.'
-author: 'Andrew'
+title: "Sitecore Workflows that Work"
+pubDate: 2025-11-01
+description: "Whether you’re on SitecoreAI, XM, or XP, these tips and tricks can streamline your content creation."
+author: "Andrew"
 image:
-    url: '/images/workflogo.jpg'
-    alt: 'A parody of the poster for the movie Flow, with the word work in front of it and the Sitecore logo covering the cat.'
+  url: "/images/workflogo.jpg"
+  alt: "A parody of the poster for the movie Flow, with the word work in front of it and the Sitecore logo covering the cat."
 tags: ["Sitecore", "Workflow", "featured"]
-
 ---
 
-This was intended to be a **simple** companion post to my Sitecore User Group Workflow presentation.  
+This was intended to be a **simple** companion post to my Sitecore User Group Workflow presentation.
 
 But as I typed out my talk track, I kept finding myself wanting to elaborate on everything. I started going down rabbit holes of information that were way beyond the scope of what I was looking to write. So long story short: I’m taking a cue from my MVP Mentor [Carlos Rodriguez](https://sabor413blog.wordpress.com/2023/10/07/writing-good-sitecore-blogs), and this is now the first in a 3 part series on workflow. Tentatively, here are the topics I aim to address:
 
@@ -19,13 +17,11 @@ But as I typed out my talk track, I kept finding myself wanting to elaborate on 
 - Part 2, for **admins**: Automating workflow on datasources
 - Part 3, for **devs**: Advanced scenarios using the API or GraphQL mutations
 
-
-## Sitecore workflows that work
+## Sitecore workflows that work: Simple governance for every Sitecore implementation
 
 Sitecore workflows are an important part of content governance, but it can be difficult to quantify their value. They often go unnoticed when present, and when absent the problems aren’t immediately obvious unless you know what to look for.
 
 Sitecore has long recommended that customers utilize workflow, and even mentions it specifically for SitecoreAI. Unfortunately, workflow is often overlooked. My goal in these posts is to help you answer these questions:
-
 
 - [What are workflows?](#what-are-workflows)
 - [Why are workflows important?](#why-are-workflows-important)
@@ -34,11 +30,9 @@ Sitecore has long recommended that customers utilize workflow, and even mentions
 - [What are some potential pitfalls with workflow?](#what-are-some-potential-pitfalls-with-workflow)
 - [How do I get started with workflow?](#how-do-i-get-started-with-workflow)
 
-
 ## What are workflows?
 
 ![Workflow Image](/images/what-is-workflow.png "Image of workflow")
-
 
 A workflow is a series of predefined states that a piece of content must pass through before it can be published. Each state represents a step in the review process (for example, Draft → Review → Approved). Commands move content between these states, and actions can trigger API calls or webhooks when changes occur.
 
@@ -59,7 +53,6 @@ Workflows add a layer of protection and accountability that keeps content teams 
 ## How do I know if I have workflow or not?
 
 ![How do I know](/images/XMC-XP.jpg "Screenshot of the workflow notifications in SitecoreAI and Sitecore XP")
-
 
 If you don’t have a workflow, your content is publishable from the moment it is created. Signs that you may not have workflow enabled:
 
@@ -116,10 +109,10 @@ If you’d like, I can split this into shorter posts, add images or callout bloc
 The workflow consists of:
 
 - One initial state (Draft)
-- One final state (Approved) 
+- One final state (Approved)
 - One command under the initial state, pointing to the final state (Approve)
-  
-This eliminates the first and third problems I mentioned earlier.  Your items will no longer be available for publishing until you specifically approve them.  And you will automatically create a new version when editing content that’s already been approved.**
-It will not give you a step to send it to legal or QA or any other department, but it’s a good first step.  
+
+This eliminates the first and third problems I mentioned earlier. Your items will no longer be available for publishing until you specifically approve them. And you will automatically create a new version when editing content that’s already been approved.\*\*
+It will not give you a step to send it to legal or QA or any other department, but it’s a good first step.
 
 We’ll handle the rest in Phase 2. Winky face emoji.
