@@ -1,6 +1,6 @@
 ---
 title: "Automating workflow on datasources"
-pubDate: 2025-11-25
+pubDate: 2025-11-15
 description: "Whether you’re on SitecoreAI, XM, or XP, these tips and tricks can streamline your content creation."
 author: "Andrew"
 image:
