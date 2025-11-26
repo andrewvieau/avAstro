@@ -70,3 +70,5 @@ The Datasource Workflow Action is one of those small, often overlooked Sitecore 
 If this blog post helped you, I would love to hear about it! The best place to reach me is via a direct message on LinkedIn.
 
 Thanks for reading!
+
+Next up: [Modifying Workflow Programmatically](/posts/workflow3/) (for developers)

@@ -116,3 +116,5 @@ This eliminates the first and third problems I mentioned earlier. Your items wil
 It will not give you a step to send it to legal or QA or any other department, but it’s a good first step.
 
 We’ll handle the rest in Phase 2. Winky face emoji.
+
+Next up: [Automating workflow on datasources](/posts/workflow2/) (for admins)
