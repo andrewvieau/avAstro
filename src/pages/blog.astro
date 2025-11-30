@@ -13,11 +13,11 @@ const pageTitle = "Blog";
 
   <MostRecentFeaturedPost />
 
-  <ul>
+  <ul class="posts-list">
     {
       sortedPosts.map((post: any) => (
-        <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />
-      ))
+        <BlogPost url={`/posts/${post.id}/`} title={post.data.title} image={post.data.image} />
+        ))
     }
   </ul>
 </BaseLayout>

@@ -24,13 +24,12 @@ const featuredPosts = allPosts.filter((post) => {
 
 const mostRecentFeatured = featuredPosts[0];
 ---
-<p>Featured:
 {mostRecentFeatured ? (
   <FeaturedPost url={mostRecentFeatured.url} title={mostRecentFeatured.frontmatter.title} />
 ) : (
   <p>No featured post found.</p>
 )}
-</p>
+
 
 
 

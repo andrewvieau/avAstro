@@ -1,10 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
+import FeaturedPost from '../components/FeaturedPost.astro';
+import MostRecentFeaturedPost from '../components/MostRecentFeaturedPost.astro';
 const pageTitle = "AndrewVieau.com";
 ---
 <BaseLayout pageTitle={pageTitle}>  
   <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari", "Salut"]} />
+
+  <p><b>From the Blog:</b>  <MostRecentFeaturedPost /></p>
+
 
   <p>
     I wanted to learn something new, so I built this site in Astro. 
