@@ -1,13 +1,12 @@
 ---
- 
-title: 'Vibe Coding Brutalism'
+title: Vibe Coding Brutalism
 pubDate: 2025-12-04
-description: 'Zero shot prompt redesign'
-author: 'Andrew'
+description: Zero shot prompt redesign
+author: Andrew
 image:
-    url: 'https://cdn.prod.website-files.com/65130e79c72ae8812db3412e/656fb0779bbb85e4ac4571fd_c17d9f70.jpeg'
-    alt: 'Brutalism in Web Design'
-tags: ["css", "blogging", "learning in public", "vibe coding", "prompt engineering"]
+  url: https://cdn.prod.website-files.com/65130e79c72ae8812db3412e/656fb0779bbb85e4ac4571fd_c17d9f70.jpeg
+  alt: Brutalism in Web Design
+tags: ["design", "AI", "vibe coding", "prompt engineering"]
 ---
 
 ## New style
