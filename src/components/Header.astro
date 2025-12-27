@@ -5,11 +5,20 @@ import ThemeIcon from './ThemeIcon.astro';
 
 
 ---
-<header>
-    <nav class="container mx-auto flex items-center justify-between p-4">
+<header class="sticky top-0 z-50 bg-white/60 backdrop-blur border-b border-slate-100">
+  <nav class="container mx-auto flex items-center justify-between py-3">
+    <div class="flex items-center gap-4">
+      <a href="/" class="text-lg font-bold">avAstro</a>
+    </div>
 
-        <Hamburger />
-        <ThemeIcon />        
-        <Navigation />
-    </nav>
+    <div class="hidden md:flex items-center gap-6">
+      <Navigation />
+      <ThemeIcon />
+    </div>
+
+    <div class="md:hidden flex items-center gap-3">
+      <ThemeIcon />
+      <Hamburger />
+    </div>
+  </nav>
 </header>

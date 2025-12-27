@@ -14,6 +14,12 @@ const { pageDescription } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
+
+    <!-- Preload/Include variable font for cleaner typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
     <title>{pageTitle}</title>
     <meta property="og:title" content={pageTitle} />
     <meta property="og:type" content="page" />
@@ -22,15 +28,19 @@ const { pageDescription } = Astro.props;
   </head>
 
   <body>
-    <container class="container mx-auto px-4 space-y-6">
+    <div class="min-h-screen bg-slate-50 text-slate-900">
       <Header />
-      <h1 class="text-3xl font-bold underline main-green-text">{pageTitle}</h1>
-      <slot />
+
+      <main class="container px-6 py-12 article">
+        <h1 class="text-3xl font-extrabold main-green-text">{pageTitle}</h1>
+        <slot />
+      </main>
+
       <Footer />
-    </container>
-  <script>
-    import "../scripts/menu.js";
-  </script>
+    </div>
+    <script type="module">
+      import "../scripts/menu.js";
+    </script>
   </body>
   
 </html>
