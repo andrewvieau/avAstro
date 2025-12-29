@@ -4,7 +4,7 @@ pubDate: 2025-12-27
 description: VSCode commit history saves the day
 author: Andrew
 image:
-  url: "/images/commit-history.png"
+  url: "../images/commit-history.png"
   alt: Picture of my embarassing commit history
 tags: ["design", "AI", "vibe coding", "prompt engineering"]
 ---
